@@ -1,0 +1,65 @@
+/* Палітра кольорів 
+background: #F5F5F5
+background-header: #FFFFFF
+background-futer: #2F303A
+background-hero: #2F303A
+background-team: #2F303A
+background-botton: #F5F4FA
+blue: #2196F3
+white: #FFFFFF
+black-word: #212121
+blue-logo: #2196F3
+black-logo: #000000
+text-main: #212121
+text: #757575
+*/
+
+body {
+  background-color: #f5f5f5;
+  color: #212121;
+}
+
+/* Перша частина логотипу */
+.logo-blue {
+  color: #2196f3;
+}
+
+/* Друга частина логотипу */
+.logo-black {
+  color: #000000;
+}
+
+/* Скасував мітки у списках */
+.list {
+  list-style: none;
+}
+
+/* Скасував підкреслювання у посиланнях */
+a {
+  text-decoration: none;
+}
+
+/* Задав кольор тексту посилань */
+.site-nav .link,
+.contacts .cont {
+  color: #212121;
+}
+
+/* Зміна кольору тексту (миш, таб) */
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts .cont:hover,
+.contacts .cont:focus {
+  color: #2196f3;
+}
+
+/* Задав колір тексту у футері */
+.contacts-nav .list-footer {
+  color: #fff;
+}
+
+/* Зміна кольору тексту (миш, таб) */
+.contacts-nav .list-footer:hover,
+.contacts-nav .list-footer:focus {
+  color: #2196f3;
+}
