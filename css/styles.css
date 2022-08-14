@@ -12,21 +12,13 @@ blue-logo: #2196F3
 black-logo: #000000
 text-main: #212121
 text: #757575
+text-footer: rgba(255, 255, 255, 0.6);
+
 */
 
 body {
   background-color: #f5f5f5;
   color: #212121;
-}
-
-/* Перша частина логотипу */
-.logo-blue {
-  color: #2196f3;
-}
-
-/* Друга частина логотипу */
-.logo-black {
-  color: #000000;
 }
 
 /* Скасував мітки у списках */
@@ -37,6 +29,16 @@ body {
 /* Скасував підкреслювання у посиланнях */
 a {
   text-decoration: none;
+}
+
+/* Перша частина логотипу */
+.logo-blue {
+  color: #2196f3;
+}
+
+/* Друга частина логотипу */
+.logo-black {
+  color: #000000;
 }
 
 /* Задав кольор тексту посилань */
@@ -53,13 +55,40 @@ a {
   color: #2196f3;
 }
 
-/* Задав колір тексту у футері */
-.contacts-nav .list-footer {
+/* Головний текст */
+.sec-hiro {
   color: #fff;
 }
 
-/* Зміна кольору тексту (миш, таб) */
+/* Колір тексту скілів, професії, назви робіт */
+.skills,
+.prof,
+.names-work {
+  color: #757575;
+}
+
+/* Задав колір тексту у футері */
+.contacts-nav .list-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Зміна кольору тексту у футері (миш, таб) */
 .contacts-nav .list-footer:hover,
 .contacts-nav .list-footer:focus {
+  color: #fff;
+}
+
+/* Кнопка */
+.button {
+  color: #212121;
+  background: #F5F5F5;
+}
+/* .button.primery { */
+  color: #f5f4fa;
+  background-color: #2196f3;
+}
+
+/* .button.secondary { */
   color: #2196f3;
+  background-color: #f5f4fa;
 }
