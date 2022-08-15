@@ -5,8 +5,8 @@ background-futer: #2F303A
 background-hero: #2F303A
 background-team: #2F303A
 background-botton: #F5F4FA
-blue: #2196F3
-white: #FFFFFF
+accent-button: #2196F3
+white-button: #FFFFFF
 black-word: #212121
 blue-logo: #2196F3
 black-logo: #000000
@@ -16,9 +16,16 @@ text-footer: rgba(255, 255, 255, 0.6);
 
 */
 
+:root {
+  --primery-text-color: #212121;
+  --primery-bg-color: #f5f5f5;
+  --background-botton: #f5f4fa;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+}
 body {
-  background-color: #f5f5f5;
-  color: #212121;
+  background-color: var(--primery-bg-color);
+  color: var(--primery-text-color);
 }
 
 /* Скасував мітки у списках */
@@ -44,7 +51,7 @@ a {
 /* Задав кольор тексту посилань */
 .site-nav .link,
 .contacts .cont {
-  color: #212121;
+  color: var(--primery-text-color);
 }
 
 /* Зміна кольору тексту (миш, таб) */
@@ -52,7 +59,11 @@ a {
 .site-nav .link:focus,
 .contacts .cont:hover,
 .contacts .cont:focus {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
 }
 
 /* Головний текст */
@@ -63,8 +74,8 @@ a {
 /* Колір тексту скілів, професії, назви робіт */
 .skills,
 .prof,
-.names-work {
-  color: #757575;
+.work-list {
+  color: var(--secondary-text-color);
 }
 
 /* Задав колір тексту у футері */
@@ -80,15 +91,15 @@ a {
 
 /* Кнопка */
 .button {
-  color: #212121;
-  background: #F5F5F5;
+  color: var(--primery-text-color);
+  background: var(--primery-bg-color);
 }
-/* .button.primery { */
+.button.primery {
   color: #f5f4fa;
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 
-/* .button.secondary { */
-  color: #2196f3;
-  background-color: #f5f4fa;
+.button.secondary {
+  color: var(--primery-text-color);
+  background-color: var(--background-botton);
 }
