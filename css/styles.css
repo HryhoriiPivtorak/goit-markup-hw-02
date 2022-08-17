@@ -1,31 +1,31 @@
 /* Палітра кольорів 
-background: #F5F5F5
-background-header: #FFFFFF
-background-futer: #2F303A
-background-hero: #2F303A
-background-team: #2F303A
-background-botton: #F5F4FA
-accent-button: #2196F3
-white-button: #FFFFFF
-black-word: #212121
-blue-logo: #2196F3
-black-logo: #000000
-text-main: #212121
-text: #757575
+background: #F5F5F5;
+background-header: #FFFFFF;
+background-futer: #2F303A;
+background-hero: #2F303A;
+background-team: #F5F4FA
+background-botton: #F5F4FA;
+accent-button: #2196F3;
+white-button: #FFFFFF;
+black-word: #212121;
+blue-logo: #2196F3;
+black-logo: #000000;
+text-main: #212121;
+text: #757575;
 text-footer: rgba(255, 255, 255, 0.6);
 
 */
 
 :root {
-  --primery-text-color: #212121;
-  --primery-bg-color: #f5f5f5;
-  --background-botton: #f5f4fa;
-  --secondary-text-color: #757575;
   --accent-color: #2196f3;
 }
+
 body {
-  background-color: var(--primery-bg-color);
-  color: var(--primery-text-color);
+  background-color: #fff;
+  color: #212121;
+
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
 }
 
 /* Скасував мітки у списках */
@@ -38,9 +38,16 @@ a {
   text-decoration: none;
 }
 
-/* Перша частина логотипу */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+/*Перша частина логотипу */
 .logo-blue {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Друга частина логотипу */
@@ -48,10 +55,20 @@ a {
   color: #000000;
 }
 
+/* Друга частина логотипу у футері */
+.logo-white {
+  color: #fff;
+}
+
 /* Задав кольор тексту посилань */
 .site-nav .link,
 .contacts .cont {
-  color: var(--primery-text-color);
+  color: #212121;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 /* Зміна кольору тексту (миш, таб) */
@@ -67,18 +84,103 @@ a {
 }
 
 /* Головний текст */
-.sec-hiro {
+.hero {
   color: #fff;
+  background-color: #212121;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Шрифт для h1 "Ефективні рішення" */
+.sec-hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
+/* Шрифт для кнопок фільтру */
+.bt.primery {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 /* Колір тексту скілів, професії, назви робіт */
-.skills,
+.skills-list,
 .prof,
 .work-list {
-  color: var(--secondary-text-color);
+  color: #757575;
 }
 
-/* Задав колір тексту у футері */
+/* Розмір шрифту для "Наші скіли" h2 */
+.skills {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* Колір фону для секції "Наша команда" */
+.our-team {
+  background-color: #f5f4fa;
+}
+
+/* Розмір шрифту для тексту у секції "Наші скіли" */
+.skills-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-transform: none;
+}
+
+/* Розмір шрифту для секцій "Наші скіли" і "Наша команда", h2 */
+.subtitle,
+.team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* Розмір шрифту для імен у "Наша команда" */
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* Розмір шрифта для професій у "Наша команда" */
+.prof {
+  font-weight: 400;
+}
+
+/* Розмір шрифту для проєктів у "Приклади робіт", h3*/
+.project {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* Розмір шрифту для прикладів дизайну у "Приклад робіт"  */
+.work-list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* Футер */
+footer {
+  background-color: #2f303a;
+}
+
+/* Колір тексту у футері */
 .contacts-nav .list-footer {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -89,17 +191,25 @@ a {
   color: #fff;
 }
 
-/* Кнопка */
-.button {
-  color: var(--primery-text-color);
-  background: var(--primery-bg-color);
+/* Кнопка фільтру*/
+button {
+  color: #212121;
+  background: #fff;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 62;
+  text-align: center;
 }
-.button.primery {
+
+.but.primery,
+.bt.primery {
   color: #f5f4fa;
   background-color: var(--accent-color);
 }
 
-.button.secondary {
-  color: var(--primery-text-color);
-  background-color: var(--background-botton);
+.bt.secondary {
+  color: #212121;
+  background-color: #f5f4fa;
 }

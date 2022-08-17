@@ -5,13 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="en">WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header>
       <!--Логотип-->
-      <a href="./index.html"
+      <a class="logo" href="./index.html"
         ><span class="logo-blue" lang="en">Web</span
         ><span class="logo-black" lang="en">Studio</span></a
       >
@@ -40,19 +46,19 @@
 
     <main>
       <!--Головний посил, кнопка послуги-->
-      <section>
-        <h1 class="sec-hiro">Ефективні рішення для вашого бізнесу</h1>
-        <a href="" class="button primery">Замовити послугу</a>
-        <!-- <button type="button">Замовити послугу</button> -->
+      <section class="hero">
+        <h1 class="sec-hero">Ефективні рішення для вашого бізнесу</h1>
+        <!-- <a href="" class="bt primery">Замовити послугу</a> -->
+        <button type="button" class="but primery">Замовити послугу</button>
       </section>
 
       <!--Наші скіли-->
-      <section>
+      <section class="skills">
         <h2>Наші скіли</h2>
         <ul class="list">
           <li>
             <h3>Увага до деталей</h3>
-            <p class="skills">
+            <p class="skills-list">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
@@ -60,7 +66,7 @@
 
           <li>
             <h3>Пунктуальність</h3>
-            <p class="skills">
+            <p class="skills-list">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
@@ -68,14 +74,14 @@
 
           <li>
             <h3>Планування</h3>
-            <p class="skills">
+            <p class="skills-list">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
 
           <li>
             <h3>Сучасні технологіх</h3>
-            <p class="skills">
+            <p class="skills-list">
               Значимість цих проблем настільки очевидна, що реалізація планових
               завдань.
             </p>
@@ -83,8 +89,8 @@
         </ul>
 
         <!--Наша робота-->
-        <section>
-          <h2>Чим ми займаємося</h2>
+        <section class="our-work">
+          <h2 class="subtitle">Чим ми займаємося</h2>
           <ul class="list">
             <li>
               <img
@@ -117,8 +123,8 @@
       </section>
 
       <!--Наша команда-->
-      <section>
-        <h2>Наша команда</h2>
+      <section class="our-team">
+        <h2 class="team">Наша команда</h2>
         <ul class="list">
           <li>
             <!--Ігор Дем'яненко-->
@@ -128,7 +134,7 @@
               height="260"
               alt="Ігор Дем'яненко, Дизайнер продукту"
             />
-            <h3>Ігор Дем'яненко</h3>
+            <h3 class="team-name">Ігор Дем'яненко</h3>
             <p class="prof" lang="en">Product Designer</p>
           </li>
           <li>
@@ -139,7 +145,7 @@
               height="260"
               alt="Ольга Рєпіна, Розробник"
             />
-            <h3>Ольга Рєпіна</h3>
+            <h3 class="team-name">Ольга Рєпіна</h3>
             <p class="prof" lang="en">Frontend Developer</p>
           </li>
           <li>
@@ -150,7 +156,7 @@
               height="260"
               alt="Микола Тарасов, Маркетинг"
             />
-            <h3>Микола Тарасов</h3>
+            <h3 class="team-name">Микола Тарасов</h3>
             <p class="prof" lang="en">Marketing</p>
           </li>
           <li>
@@ -161,7 +167,7 @@
               height="260"
               alt="Михайло Єрмаков, Дизайнер"
             />
-            <h3>Михайло Єрмаков</h3>
+            <h3 class="team-name">Михайло Єрмаков</h3>
             <p class="prof" lang="en">UI Designer</p>
           </li>
         </ul>
@@ -170,9 +176,9 @@
 
     <!--Footer: Логотип і адреса-->
     <footer>
-      <a href="./index.html"
+      <a class="logo" href="./index.html"
         ><span class="logo-blue" lang="en">Web</span
-        ><span class="logo-black" lang="en">Studio</span></a
+        ><span class="logo-white" lang="en">Studio</span></a
       >
       <address>
         <ul class="contacts-nav list">
