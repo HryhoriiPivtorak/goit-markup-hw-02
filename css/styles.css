@@ -8,24 +8,45 @@ background-botton: #F5F4FA;
 accent-button: #2196F3;
 white-button: #FFFFFF;
 black-word: #212121;
-blue-logo: #2196F3;
-black-logo: #000000;
-text-main: #212121;
-text: #757575;
+logo-blue: #2196F3;
+logo-black: #000000;
+main-color-txt: #212121;
+color-text: #757575;
 text-footer: rgba(255, 255, 255, 0.6);
 
 */
 
 :root {
   --accent-color: #2196f3;
+  --main-color-txt: #212121;
+  --main-bg-color: #fff;
+  --logo-black: #000000;
+  --button-white-txt: #fff;
+  --color-text: #757575;
 }
 
 body {
-  background-color: #fff;
-  color: #212121;
+  background-color: var(--main-bg-color);
+  color: var(--main-color-txt);
 
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
   letter-spacing: 0.03em;
+}
+
+/* Ховаємо єлементи з h2 */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Скасував мітки у списках */
@@ -53,7 +74,7 @@ body {
 
 /* Друга частина логотипу */
 .logo-black {
-  color: #000000;
+  color: var(--logo-black);
 }
 
 /* Друга частина логотипу у футері */
@@ -62,12 +83,10 @@ body {
 }
 
 /* Задав кольор тексту посилань */
-.site-nav .link,
-.contacts .cont {
-  color: #212121;
+.site-nav .link {
+  color: var(--main-color-txt);
 
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -86,43 +105,32 @@ body {
 
 /* Головний текст */
 .hero {
-  color: #fff;
   background-color: #212121;
-
-  text-transform: uppercase;
-  text-align: center;
 }
 
 /* Шрифт для h1 "Ефективні рішення" */
-.sec-hero {
+.hero-txt {
+  color: #fff;
+
+  text-transform: uppercase;
+  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
 }
 
-/* Шрифт для кнопок фільтру */
-.bt.primery {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-}
-
 /* Колір тексту скілів, професії, назви робіт */
 .skills-list,
 .prof,
-.work-list {
-  color: #757575;
+.work-list,
+.cont {
+  color: var(--color-text);
 }
 
 /* Розмір шрифту для "Наші скіли" h2 */
-.skills {
+.skills-title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -135,7 +143,6 @@ body {
 /* Розмір шрифту для тексту у секції "Наші скіли" */
 .skills-list {
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
   text-transform: none;
 }
@@ -190,8 +197,7 @@ body {
 .contacts-nav {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: calc (24 / 14);
+  line-height: 1.71;
 }
 
 /* Зміна кольору тексту у футері (миш, таб) */
@@ -201,24 +207,41 @@ body {
 }
 
 /* Кнопка фільтру*/
-button {
+.bt {
   color: #212121;
-  background: #fff;
 
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1, 62;
-  text-align: center;
+  line-height: 1.62;
+  cursor: pointer;
 }
 
-.but.primery,
-.bt.primery {
-  color: #f5f4fa;
+/* Шрифт для кнопок фільтру */
+.but-oder {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.but-oder,
+.bt.primery,
+.bt.secondary:hover,
+.bt.secondary:focus {
+  color: var(--button-white-txt);
   background-color: var(--accent-color);
 }
 
 .bt.secondary {
-  color: #212121;
   background-color: #f5f4fa;
 }
+
+/* .bt.secondary:hover,
+.bt.secondary:focus {
+  color: var(--button-white-txt);
+  background-color: var(--accent-color);
+} */
