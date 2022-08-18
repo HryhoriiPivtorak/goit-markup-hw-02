@@ -217,7 +217,7 @@ body {
   cursor: pointer;
 }
 
-/* Шрифт для кнопок фільтру */
+/* Шрифт для кнопоки "Замовити послугу" */
 .but-oder {
   font-weight: 700;
   font-size: 16px;
@@ -228,6 +228,7 @@ body {
   cursor: pointer;
 }
 
+/* Зміна кольору кнопок */
 .but-oder,
 .bt.primery,
 .bt.secondary:hover,
@@ -236,12 +237,7 @@ body {
   background-color: var(--accent-color);
 }
 
+/* Кнопка фільтру не активна */
 .bt.secondary {
   background-color: #f5f4fa;
 }
-
-/* .bt.secondary:hover,
-.bt.secondary:focus {
-  color: var(--button-white-txt);
-  background-color: var(--accent-color);
-} */
