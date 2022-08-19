@@ -23,6 +23,10 @@ text-footer: rgba(255, 255, 255, 0.6);
   --logo-black: #000000;
   --button-white-txt: #fff;
   --color-text: #757575;
+  --button-bg-color: #f5f4fa;
+  --team-bg: #f5f4fa;
+  --hero-bg: #2f303a;
+  --footer-bg: #2f303a;
 }
 
 body {
@@ -105,7 +109,7 @@ body {
 
 /* Головний текст */
 .hero {
-  background-color: #212121;
+  background-color: var(--hero-bg);
 }
 
 /* Шрифт для h1 "Ефективні рішення" */
@@ -126,18 +130,23 @@ body {
 .work-list,
 .cont {
   color: var(--color-text);
+
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 
 /* Розмір шрифту для "Наші скіли" h2 */
 .skills-title {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
 /* Колір фону для секції "Наша команда" */
 .our-team {
-  background-color: #f5f4fa;
+  background-color: var(--team-bg);
 }
 
 /* Розмір шрифту для тексту у секції "Наші скіли" */
@@ -166,6 +175,8 @@ body {
 /* Розмір шрифта для професій у "Наша команда" */
 .prof {
   font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 /* Розмір шрифту для проєктів у "Приклади робіт", h3*/
@@ -185,11 +196,11 @@ body {
 
 /* Футер */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--footer-bg);
 }
 
 /* Колір тексту у футері */
-.contacts-nav .list-footer {
+.list-footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -200,10 +211,14 @@ body {
   line-height: 1.71;
 }
 
+.addres {
+  color: var(--button-white-txt);
+}
+
 /* Зміна кольору тексту у футері (миш, таб) */
-.contacts-nav .list-footer:hover,
-.contacts-nav .list-footer:focus {
-  color: #fff;
+.list-footer:hover,
+.list-footer:focus {
+  color: var(--button-white-txt);
 }
 
 /* Кнопка фільтру*/
@@ -226,6 +241,7 @@ body {
   align-items: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  font-family: inherit;
 }
 
 /* Зміна кольору кнопок */
@@ -239,5 +255,5 @@ body {
 
 /* Кнопка фільтру не активна */
 .bt.secondary {
-  background-color: #f5f4fa;
+  background-color: var(--button-bg-color);
 }
